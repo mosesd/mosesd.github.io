@@ -1,0 +1,279 @@
+  <!doctype html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>ElectroShop</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="shortcut icon" type="image/x-icon" href="iconoes.png">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans+Condensed:300|Viga" rel="stylesheet">
+  </head>
+
+  <body>
+      <main>
+        <header>
+            <div id="logo">
+             <a href="index.html" alt="logo" title="ElectroShop"><img src="logo_2.png" alt="logo"></a>
+            </div>
+            <div id="navi">
+             <nav>
+               <ul id="nav">
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="computadoras.html">Computo</a></li>
+                  <li><a href="celulares.html">Celulares</a></li>
+                  <li><a href="audio.html">Audio</a></li>
+                  <li><a href="videotv.html">Video y TV</a></li>
+                  <li><a  href="camaras.html">Camaras</a></li>
+                  <li><a  href="consolas.html">Consolas</a></li>
+                  <li><a  href="contacto.html">Contacto</a></li>
+               </ul>
+             </nav>
+             </div>
+          </header>
+      <div id="slider">
+        <div id="captioned-gallery">
+          <figure class="slider">
+            <figure>
+              <img src="laptop.jpeg" alt>
+              <figcaption>Nueva Laptop LG</figcaption>
+            </figure>
+            <figure>
+              <img src="tele.jpeg" alt>
+              <figcaption>SMART TV En Oferta</figcaption>
+            </figure>
+            <figure>
+              <img src="lavadora.jpeg" alt>
+              <figcaption>Lavadoras y secadoras</figcaption>
+            </figure>
+            <figure>
+              <img src="slide1.png" alt>
+              <figcaption>Celulares y productos Galaxy  </figcaption>
+            </figure>
+            <figure>
+              <img src="slide2.png" alt>
+              <figcaption>Lo nuevo de Samsung</figcaption>
+            </figure>
+          </figure>
+      </div>
+      </div>
+
+  <div id="masvendidos">
+    <h2>LOS MAS VENDIDOS</h2>
+
+        <a href="#"><div class="product-img"><img src="prod/hp-8184-0803711-1-product.jpg"><div class="product-info"><div class="pname">Hp Impresora Multifuncional 3545 E All In One Neg...</div><div class="price-secondary">S/ 130.00</div></div></div></a>
+
+        <a href="#"><div class="product-img"><img src="prod/huawei-2586-3738682-1-product.jpg"><div class="product-info"><div class="pname">Smartphone Huawei P9 32GB 4G LTE Desbloq...</div><div class="price-secondary">S/ 1619.00</div></div></div></a>
+
+        <a href="#"><div class="product-img"><img src="prod/neo-digital-8503-8561532-1-product.jpg"><div class="product-info"><div class="pname">Smart Watch BW8 Bluetooth Táctil Reloj I...</div><div class="price-secondary">S/ 99.00</div></div></div></a>
+
+        <a href="#"><div class="product-img"><img src="prod/samsung-6838-5324-1-product.jpg"><div class="product-info"><div class="pname">LG Smart TV 32" HD WebOS 2.0 32LF595B</div><div class="price-secondary">S/ 879.00</div></div></div></a>
+
+        <a href="#"><div class="product-img"><img src="prod/qatary-import-8445-229219-1-product.jpg"><div class="product-info"><div class="pname">Cable Conector USB para Iphone 4/4S + Ca...</div><div class="price-secondary">S/ 7.90</div></div></div></a>
+
+        <a href="#"><div class="product-img"><img src="prod/htc-0608-5314632-1-product.jpg"><div class="product-info"><div class="pname">HTC one M8 32GB Desbloqueado-Gris</div><div class="price-secondary">S/ 659.00</div></div></div></a>
+
+        <a href="#"><div class="product-img"><img src="prod/sony-7127-0505431-1-product.jpg"><div class="product-info"><div class="pname">Audífonos AUSDOM headphone-QC.</div><div class="price-secondary">S/ 110.28</div></div></div></a>
+
+        <a href="#"><div class="product-img"><img src="prod/canon-3950-0958662-1-product.jpg"><div class="product-info"><div class="pname">Canon - Cámara PowerShot SX410 HS 20MP 4...</div><div class="price-secondary">S/ 799.00</div></div></div></a>
+
+
+</div>
+<!-- MAPA -->
+<div id="map-canvas" style="
+    margin:0 auto;
+    height: 500px;
+"></div>
+<script type="text/javascript"
+    src="http://maps.googleapis.com/maps/api/js?sensor=false">
+</script>
+<script>
+    function initialise() {
+
+    var styles = [
+        {
+            "featureType": "administrative",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#444444"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "color": "#f2f2f2"
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "saturation": -100
+                },
+                {
+                    "lightness": 45
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "transit",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "color": "#dde6e8"
+                },
+                {
+                    "visibility": "on"
+                }
+            ]
+        }
+    ];
+
+var myLatlng = new google.maps.LatLng(-12.072512, -76.948289);
+var markerLatlng = new google.maps.LatLng(-12.073283,-76.948050);
+var options = {
+mapTypeControlOptions: {
+    mapTypeIds: ['Styled']
+},
+    center: myLatlng,
+    zoom: 17,
+    minZoom: 5,
+    maxZoom: 30,
+    zoomControl:true, // Set to true if using zoomControlOptions below, or false to remove all zoom controls.
+    zoomControlOptions: {
+        style:google.maps.ZoomControlStyle.LARGE,
+        position: google.maps.ControlPosition.LEFT_BOTTOM
+    },
+    disableDefaultUI: true,
+    mapTypeControl:false,
+    mapTypeId: 'Styled',
+    scrollwheel: false,
+};
+var div = document.getElementById('map-canvas');
+var map = new google.maps.Map(div, options);
+var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
+map.mapTypes.set('Styled', styledMapType);
+
+var image = new google.maps.MarkerImage("images/googleMarker.png", null, null, null, new google.maps.Size(295,250)); // Create a variable for our marker image.
+
+var marker = new google.maps.Marker({ // Set the marker
+    position: markerLatlng, // Position marker to coordinates
+    icon:image, //use our image as the marker
+    map: map, // assign the marker to our map variable
+});
+
+google.maps.event.addDomListener(window, 'resize', function() { map.setCenter(myLatlng); }); // Keeps the Pin Central when resizing the
+}
+google.maps.event.addDomListener(window, 'load', initialise); // Execute our 'initialise' function once the page has loaded.
+</script>
+
+<footer>
+      <div id="footer">
+        <section id="footerlinks">
+          <ul>
+          <h3>Productos</h3>
+          <li><a target="_blank" href="#" >Computadoras</a></li>
+          <li><a target="_blank" href="#">Celulares</a></li>
+          <li><a target="_blank" href="#">Audio</a></li>
+          <li><a target="_blank" href="#">Video</a></li>
+          <li><a><a target="_blank" href="#">Camaras</a></a></li>
+          <li><a target="_blank" href="#">Consolas</a></li>
+      </ul></section>
+
+          <section id="footerlinks"><ul>
+              <h3>Servicio al Cliente</h3>
+              <li><a target="_blank" href="#">Ayuda</a></li>
+              <li><a target="_blank" href="#">Sobre nosotros</a></li>
+              <li><a target="_blank" href="#">Terminos de uso</a></li>
+              <li><a target="_blank" href="#">Contacto</a></li>
+              <li><a target="_blank" href="#">Chat</a></li>
+              <li><a target="_blank" href="#">Chat</a></li>
+          </ul></section>
+
+          <section id="footerlinks"><ul>
+              <h3>Empresas</h3>
+              <li><a target="_blank" href="#">Ayuda</a></li>
+              <li><a target="_blank" href="#">Sobre nosotros</a></li>
+              <li><a target="_blank" href="#">Terminos de uso</a></li>
+              <li><a target="_blank" href="#">Contacto</a></li>
+              <li><a target="_blank" href="#">Chat</a></li>
+              <li><a target="_blank" href="#">Chat</a></li>
+          </ul></section>
+
+          <section id="footerlinks"><ul>
+          <h3>Redes sociales</h3>
+              <li><a target="_blank" href="#">Ayuda</a></li>
+              <li><a target="_blank" href="#">Sobre nosotros</a></li>
+              <li><a target="_blank" href="#">Terminos de uso</a></li>
+              <li><a target="_blank" href="#">Contacto</a></li>
+              <li><a target="_blank" href="#">Chat</a></li>
+              <li><a target="_blank" href="#">Chat</a></li>
+              
+          </ul></section>
+          </div>
+          <div class="clear"></div>
+          <div class="copyright">
+            <div id="ftexto">ElectroShop © 2016  - Peru, Todos los derechos reservados.
+              | <a href="#">Condiciones de uso y Seguridad</a>
+              | <a href="#">Ventas corporativas</a>
+              | <a href="#">Contacto</a>
+            </div>
+
+          </div>
+
+
+
+</footer>
+</main>
+  </body>
+  </html>
